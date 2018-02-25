@@ -1,4 +1,5 @@
-
+ifeq ($(BOARD_CUSTOM_BOOTIMG),true)
+ifeq ($(BOARD_MRVL_BOOTIMG),true)
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
@@ -58,4 +59,5 @@ LOCAL_FORCE_STATIC_EXECUTABLE := true
 include $(BUILD_EXECUTABLE)
 
 $(call dist-for-goals,dist_files,$(LOCAL_BUILT_MODULE))
-
+endif
+endif
