@@ -31,6 +31,5 @@ BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 ifeq ($(TW_THEME),)
 TW_THEME := portrait_hdpi
 endif
-TW_INCLUDE_CRYPTO := true
 RECOVERY_SDCARD_ON_DATA := true
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
